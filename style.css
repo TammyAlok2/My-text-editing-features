@@ -1,0 +1,52 @@
+#p1{
+    border-color:  black;
+    background-color: lightblue;
+    height: 300px;
+    width: 400px;
+-webkit-overflow-scrolling: ;
+    background-size: contain;
+    text-size-adjust: scroll;
+    
+    overflow: scroll;
+}
+#p2{
+    text-align: center;
+    text-decoration: underline;
+    color: brown;
+}
+.hover #p1{
+    background-color: pink;
+}
+textarea:hover{
+color: blue;
+background: pink;
+color: red;
+background-color: pink; 
+
+text-shadow: 10px 10px 10px white;
+border: 5px groove red;
+text-shadow: 5px 5px 2px grey;
+
+}
+button:hover{
+
+color: blue;
+background:green;
+color: red;
+background-color: orange; 
+
+text-shadow: 10px 10px 10px white;
+border: 5px groove red;
+text-shadow: 5px 5px 2px grey;
+
+}
+table, th, td{
+    border:1px solid black;
+    width:10% ;
+}
+#p1{
+    width: 100%;
+    background-color: pink;
+    border: 5px black;
+    height: 300px;
+}

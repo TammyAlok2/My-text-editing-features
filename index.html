@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #d2{
+        
+        width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -300px;
+margin-left: 10px;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+
+<script src="pagecolor.js"></script>
+<script src="textcolor.js"></script>
+<body bgcolor="gold">
+    <p id="p2"><B>MY TEXT FEATURES</B></p>
+    <textarea name=" " id="p1" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <button onclick="lw1()"> UPPER CASE</button>
+    <button onclick="lw()">LOWER CASE</button>
+    <button onclick="lw2()"> NO CHANGE</button>
+    <button onclick="lw3()"> CAPITALIZE</button>
+<button onclick="lw4()">Clear input field</button>
+<input type="text" placeholder="font-size">
+<button onclick="fontsize()"> submit </button>
+<select id="cars" aria-placeholder="font style">
+    <option value="volvo " placeholder="fpmt">Simple</option>
+    <option value="saab">BOLD</option>
+    <option >ITALIC</option>
+    <option  onmouseover="underline()">UNDERLINE</option>
+  </select>
+  <h2>Page color</h2>
+  <table style="border: 2px red;" id="b1">
+    <tr>
+        <td><button style="background-color: red; " onmouseover="red()" id="c1">red</button></td>
+        <td> <button style="background-color: pink;"  onmouseover="pink()" id="c1">pink</button></td>
+        <td><button style="background-color: blue;"  onmouseover="blue()" id="c1">blue</button></td>
+    </tr>
+    <tr>
+        <td><button style="background-color: black;" onmouseover="black()">black</button></td>
+        <td><button style="background-color: white;" onmouseover="white()">white</button></td>
+        <td><button style="background-color: yellow;" onmouseover="yellow()">yellow</button></td>
+    </tr>
+    <tr>
+        <td><button style="background-color: orange;" onmouseover="orange()">orange</button></td>
+        <td> <button style="background-color: violet;"  onmouseover="violet()">violet</button></td>
+        <td><button style="background-color: purple;"  onmouseover="purple()">purple</button></td>
+    </tr>
+    <tr>
+        <td><button style="background-color:grey;" onmouseover="grey()">grey</button></td>
+        <td><button style="background-color: skyblue;" onmouseover="skyblue()">skyblue</button></td>
+        <td><button style="background-color: brown;" onmouseover="brown()">brown</button></td>
+    </tr>
+
+</table>
+    <div id="d2">
+        <h2 style="text-align: center; margin-top:-170px; margin-left: 50px; ">Text color</h2>
+        <table style="border: 2px red;" id="b1">
+            <tr>
+                <td><button style="background-color: red; " onclick="red1()" id="c1">red</button></td>
+                <td> <button style="background-color: pink;"  onclick="pink1()" id="c1">pink</button></td>
+                <td><button style="background-color: blue;"  onclick="blue1()" id="c1">blue</button></td>
+            </tr>
+            <tr>
+                <td><button style="background-color: black;" onclick="black1()">black</button></td>
+                <td><button style="background-color: white;" onclick="white1()">white</button></td>
+                <td><button style="background-color: yellow;" onclick="yellow1()">yellow</button></td>
+            </tr>
+            <tr>
+                <td><button style="background-color: orange;" onclick="orange1()">orange</button></td>
+                <td> <button style="background-color: violet;"  onclick="violet1()">violet</button></td>
+                <td><button style="background-color: purple;"  onclick="purple1()">purple</button></td>
+            </tr>
+            <tr>
+                <td><button style="background-color:grey;" onclick="grey1()">grey</button></td>
+                <td><button style="background-color: skyblue;" onclick="skyblue1()">skyblue</button></td>
+                <td><button style="background-color: brown;" onclick="brown1()">brown</button></td>
+            </tr>
+            
+        </table>
+    </div>
+
+
+
+
+
+    <script>
+        const v=50;
+        function lw()
+        {
+            document.getElementById("p1").style.textTransform="lowercase";
+        }
+        function lw1()
+        {
+            document.getElementById("p1").style.textTransform="uppercase";
+        }
+        function lw2()
+        {
+            document.getElementById("p1").style.cssText="clear";
+        }
+        function lw3()
+        {
+    
+            document.getElementById("p1").style.textTransform="capitalize";
+        }
+        function lw4()
+        {
+            document.getElementById('p1').value = '';
+        }
+        function underline()
+        {
+            
+            document.getElementById("p1").style.fontStyle = "italic";
+        }
+        function fontsize()
+        {
+            document.getElementById("p1").style.fontSize= "55px";
+        }
+       
+    </script>
+</body>
+</html>
